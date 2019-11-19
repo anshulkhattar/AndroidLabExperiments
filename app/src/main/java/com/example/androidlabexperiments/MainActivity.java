@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         experiments.add("Exp5");
         experiments.add("Exp6");
         experiments.add("Exp7");
+        experiments.add("Exp8");
 
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, R.layout.spinner_item, experiments);
 
@@ -76,6 +77,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
         else if(item.equals("Exp7")){
             Intent i=new Intent(this,Exp7.class);
+            startActivity(i);
+        }
+        else if(item.equals("Exp8")){
+            Intent i=new Intent(this,Exp8.class);
             startActivity(i);
         }
     }
